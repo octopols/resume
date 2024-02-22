@@ -1,0 +1,197 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+\usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\footskip}{4.08003pt}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeAchievementsHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Hirnaymay Bhaskar} \\ \vspace{1pt}
+    \small +91-7017007660 $|$ \href{mailto:sony.vaio.1404@gmail.com}{\underline{sony.vaio.1404@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/hirnaymay}{\underline{linkedin.com/in/hirnaymay/}} $|$
+    \href{https://github.com/octopols}{\underline{github.com/octopols}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Dr. A. P. J. Abdul Kalam Technical University}{Lucknow, IN}
+      {Bachelor of Technology in Computer Science and Engineering}{Apr 2020 -- Jul 2024}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Google Summer of Code 2023 Student}{May 2024 -- Oct 2024}
+      {MuseScore}{London, UK(Remote)}
+      \resumeItemListStart
+        \resumeItem{Transferred the entire MuseScore popup system to a different module, establishing interfaces to minimize coupling. Implemented a popup for editing text in the music sheet with keyboard navigation and additional features.}
+        \resumeItem{Orchestrated cross-functional collaboration with design and development teams to flawlessly integrate the popup system}
+        \resumeItem{Quickly resolved crucial community-raised issues and also ensured project integrity.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Google Developers Student Clubs, Core Team Member}{Jan 2022 -- Present}
+      {Ajay Kumar Garg Engineering College}{Ghaziabad(NCR), UP, India}
+      \resumeItemListStart
+        \resumeItem{ Orchestrated and facilitated 6 industry-leading workshops, attracting 150+ attendees; collaborated with cross-functional teams to ensure seamless execution and received 98\% positive feedback scores for content and organization.}
+        \resumeItem{Played a pivotal role in the event's success by orchestrating compelling visual aids and promotional materials, ultimately driving increased engagement and attendance.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{\href{https://github.com/octopols/coloc_mobile}{\underline{Coloc}}} $|$ \emph{Flutter, Dart, Firebase}}{Jan 2024}
+          \resumeItemListStart
+            \resumeItem{An android application showcasing adept utilization of Dart, Flutter, and Firebase. Coloc streamlines the roommate-finding process for college students, integrating swipe-based matching and secure messaging functionalities for seamless roommate connections.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{\href{https://github.com/musescore/MuseScore/pull/18436}{\underline{Text Style Popup}}} $|$ \emph{C/C++, Qt, QML, Cmake, MSVC}}{May 2023}
+          \resumeItemListStart
+            \resumeItem{Designed and created a crucial pop-up system for text editing in Musescore using C++, Qt, and QML, allowing
+            users to access font properties, color, size, spacing, etc directly.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/octopols/Multiple-Overlapping-Object-Detection}{\underline{Multiple Overlapping Object Detection}}} $|$ \emph{HTML, CSS, JavaScript, TensorFlow}}{May 2023}
+          \resumeItemListStart
+            \resumeItem{Developed a project demonstrating expertise in utilizing pre-trained models in TensorFlow.js for performing multiple object detection in images with high accuracy.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/octopols/wallionary}{\underline{Wallionary}}} $|$ \emph{Kotlin, Android Studio, Firebase, Glide 4}}{Nov 2022}
+          \resumeItemListStart
+            \resumeItem{Crafted and launched Wallionary, an Android application created to help users improve their vocabulary by updating their wallpaper with new words on a daily basis.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+    \resumeSubHeadingListStart
+      \resumeSubheading{Google Summer of Code 2023}{Jun 2023}{Selected as one of 967 students out of 43,765 applicants from 65 countries.}{\href{https://summerofcode.withgoogle.com/programs/2023/projects}{\underline{Accepted Candidates List}}}
+      \resumeSubheading{Google Cloud Practitioner Program (Cloud Engineer Learning Path)}{Dec 2022}{Finished the Cloud Engineer Learning Path.}{\href{https://www.cloudskillsboost.google/public_profiles/19b211dc-6aa0-4b6f-a1bb-58c00b38c43e}{\underline{Cloud Skill Boost Profile}}}
+      \resumeSubheading{CodeChef November Challenge 2021 Division 3 (Rated)}{Nov 2021}{Global Rank 87 out of 16037 people}{\href{https://www.codechef.com/rankings/NOV21C}{\underline{Rank List}}}
+    \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, Python, JavaScript, Kotlin, Dart, HTML/CSS} \\
+     \textbf{Frameworks}{: Android SDK, Flutter, MediaPipe, Android Jetpack} \\
+     \textbf{Developer Tools}{: Git, Google Cloud Platform, Qt Creator, Android Studio, Firebase} \\
+     \textbf{Libraries}{: QtQuick, QtCore}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
